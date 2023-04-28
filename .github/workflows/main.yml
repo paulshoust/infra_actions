@@ -38,6 +38,5 @@ jobs:
         # запустить тесты
         python manage.py test
 
-    - name: Django-app workflow
 
 
