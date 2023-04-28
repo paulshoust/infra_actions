@@ -33,3 +33,11 @@ jobs:
       run: |
         # запуск проверки проекта по flake8
         python -m flake8
+        # перейти в папку с manage.py
+        cd infra_project/
+        # запустить тесты
+        python manage.py test
+
+    - name: Django-app workflow
+
+
