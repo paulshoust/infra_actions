@@ -72,7 +72,7 @@ jobs:
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_NAME }}
         key: ${{ secrets.SSH_PASSWORD }}
-        passphrase: ${{ secrets.PASSPHRASE }}
+        passphrase: ${{ secrets.SSH_PASSPHRASE }}
         script: |
           sudo docker pull paulsh/workflow
           sudo docker stop $(sudo docker ps -a -q)
